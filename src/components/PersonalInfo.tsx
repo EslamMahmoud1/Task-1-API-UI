@@ -1,4 +1,5 @@
 import { Checkbox, Input, Space, Switch } from "antd";
+import AddQuestion from "./AddQuestion";
 
 const TextIn: React.FC = (prop) => {
   const props = prop as { placeholder: string };
@@ -63,6 +64,9 @@ const PersonalInfo: React.FC = () => {
       <CheckSwitch in="ID Number " />
       <CheckSwitch in="Date of Birth  " />
       <CheckSwitch in="Gender " />
+      <Space>
+        <AddQuestion></AddQuestion>
+      </Space>
     </Space>
   );
 };
